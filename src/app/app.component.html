@@ -1,0 +1,9 @@
+<div *ngIf="isLoggedIn()">
+  <button [routerLink]="['/channels']">Chat</button>
+  <button (click)="logOut()">Logout</button>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
